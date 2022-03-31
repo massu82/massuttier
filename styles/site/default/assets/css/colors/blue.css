@@ -1,0 +1,185 @@
+/*
+Template Name: Mulan / CV Template + RTL
+Template URI: http://elmanawy.info/demo/mulan
+Description: Mulan for resume / cv / portfolio template that's suitable for freelanner and anyone want to create online portflolio
+Author: Andrés Massuttier
+Author URL: https://elmanawy.info
+Version: 1.0
+*/
+a {
+    color: #262626;
+}
+a:hover {
+    color: #262626;
+}
+.pagination .paginate_button.active a  {
+    background-color: #262626;
+    color: #ffffff;
+}
+.title-main-page h4:before {
+    border-color: #262626;
+}
+.title-main-page p:after {
+    border-bottom: 5px solid #262626;
+}
+.sub-title h6:before {
+    background: #262626;
+}
+.section-head h4:before {
+    background: #262626;
+}
+#preloader-circle span {
+    border: 8px solid #262626;
+}
+.site-title span {
+    color: #262626;
+}
+.header-main-menu li a i {
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.responsive-header  {  
+    color: #262626;
+}
+.bout-list-summry li .icon-info{
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.special-block-bg::before {
+    border-color: #262626 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #262626;
+}
+.special-block-bg::after {
+    border-color: rgba(0, 0, 0, 0) #262626 #262626 rgba(0, 0, 0, 0);
+}
+.service-block:hover h4{
+    color: #262626;
+}
+.overlay {
+    background: linear-gradient(-45deg,rgba(88, 195, 255,.8) 0,#262626 40%,rgb(176, 236, 243) 100%);
+}
+.pulse-icon a {
+    color: #262626;
+}
+.counter-block::before {
+    border-color: #262626 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #262626;
+}
+.counter-block::after {
+    border-color: rgba(0, 0, 0, 0) #262626 #262626 rgba(0, 0, 0, 0);
+}
+.counter-block i {
+    color: #262626;
+}
+.testimonial-review:before {
+    color: #262626;
+}
+.owl-dot.active span{
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.timeline.currecnt .timeline-icon:after, .main-timeline .timeline:hover  .timeline-icon:after{
+     background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.main-timeline .timeline.currecnt .title, .main-timeline .timeline:hover .title{color: #262626; }
+.progress-bar {
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.filter-tabs .active-filter, .filter-tabs .fil-cat:focus, .filter-tabs .fil-cat:hover {
+    color: #262626;
+}
+.label-portfolio::before {
+    border-color: #262626 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #262626;
+}
+.label-portfolio > span {
+    color: #262626;
+}
+.blog-grid-flex .blog-item:hover .blog-article > .article-link > a {
+   background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.blog-grid-flex .blog-item-quote .article-img::after {
+    background-color: #262626;
+}
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus{
+    border-bottom: 1px solid #262626;
+}
+.bt-submit {
+   background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.contact-icon i {
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.social-media-block::after {
+    border-color: rgba(0, 0, 0, 0) #262626 #262626 rgba(0, 0, 0, 0);
+}
+.social-media-block::before {
+    border-color: #262626 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #262626;
+}
+.social-media-block a{
+    color: #262626;
+}
+.social-media-block a:hover{
+   background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.post-meta li:hover, .post-meta li a:hover{
+    color: #262626;
+}
+#posts-nav li a:hover {
+    color: #262626;
+}
+.comment-by a.reply:hover,
+.comment-by a.reply:hover i {
+    background-color: #262626;
+}
+.search-blog-input input:hover,  .search-blog-input input:focus{
+    border: 1px solid #262626;
+}
+.widget .search-blog-input .input button{
+    color: #262626;
+}
+.widget-text h5 a:hover {
+    color: #262626;
+}
+.tagcloud a:hover{
+    background-color: #262626;
+    border: 1px solid #262626;
+}
+.error-content .error-message h2 {
+    color: #262626;
+}
+.error-content .error-message h2 {
+    color: #262626;
+}
+.error-content .form-error-search .btn-search {
+    background-color: #262626;
+}
+.error-content .description a {
+    color: #262626
+}
+.profile-picture-block {
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.my-photo {
+    background: linear-gradient(135deg,#262626,#5f5f5f,#262626,#ccc,#5f5f5f);
+}
+.header-main-menu li a:hover, .header-main-menu li a.active {
+    background-color: rgba(113, 113, 113, 0.18);
+}
+.portfolio-grid .portfolio-item:hover .portfolio-data {
+    background-color: rgba(113, 113, 113, 0.65);
+}
+.portfolio-head-content {
+    background-color: rgba(113, 113, 113, 0.65);
+}
+.blog-grid-flex .blog-article .comment-like {
+    background-color: rgba(113, 113, 113, 0.6);
+}
+body::-webkit-scrollbar-thumb,
+.sub-page::-webkit-scrollbar-thumb,
+.header::-webkit-scrollbar-thumb{
+    background-color: rgba(113, 113, 113, 0.30);
+}
+img.responsive-logo {
+    border: 3px solid rgba(113, 113, 113, 0.30);
+}
+.widget .categories-list li a:hover, .widget .categories-list li a.active{
+    color: #262626
+}
