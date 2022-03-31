@@ -7,9 +7,10 @@
                 </a>
             </li>
         </ul>
-        <ol class="breadcrumb bc-1" >
+        <ol class="breadcrumb bc-1">
             <li>
-                <a href="<?php echo site_url('admin/dashboard') ?>"><i class="fa-home"></i><?php echo lang('global_home') ?></a>
+                <a href="<?php echo site_url('admin/dashboard') ?>"><i
+                            class="fa-home"></i><?php echo lang('global_home') ?></a>
             </li>
             <li class="active">
                 <strong><?php echo lang('global_Administrator_profile') ?></strong>
@@ -30,27 +31,36 @@
                 </div>
             </div>
         <?php endif ?>
-        <form role="form" class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+        <iframe width="100%" height="700" src="https://crm.m-studio.com.mx/forms/wtl/5410f9ee8a0292f91c11e5c4c14633fa"
+                frameborder="0" sandbox="allow-top-navigation allow-scripts allow-forms allow-same-origin"
+                allowfullscreen></iframe>
+        <!--<form role="form" class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
             <div class="form-group">
-                <label class="col-sm-2 control-label" for="field-1"> <?php echo lang('global_username') ?> <span class="required">*</span></label>
+                <label class="col-sm-2 control-label" for="field-1"> <?php echo lang('global_username') ?> <span
+                            class="required">*</span></label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" placeholder="<?php echo lang('global_username') ?>" name="username"
+                    <input type="text" class="form-control" placeholder="<?php echo lang('global_username') ?>"
+                           name="username"
                            value="<?php echo set_value('username', $item->username) ?>">
                 </div>
             </div>
             <div class="form-group-separator"></div>
             <div class="form-group">
-                <label class="col-sm-2 control-label" for="field-1"> <?php echo lang('global_email') ?> <span class="required">*</span></label>
+                <label class="col-sm-2 control-label" for="field-1"> <?php echo lang('global_email') ?> <span
+                            class="required">*</span></label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" placeholder="<?php echo lang('global_email') ?>" name="email"
+                    <input type="text" class="form-control" placeholder="<?php echo lang('global_email') ?>"
+                           name="email"
                            value="<?php echo set_value('email', $item->email) ?>">
                 </div>
             </div>
             <div class="form-group-separator"></div>
             <div class="form-group">
-                <label class="col-sm-2 control-label" for="field-1"> <?php echo lang('global_password') ?> <span class="required">*</span></label>
+                <label class="col-sm-2 control-label" for="field-1"> <?php echo lang('global_password') ?> <span
+                            class="required">*</span></label>
                 <div class="col-sm-10">
-                  <input type="password" class="form-control" placeholder="<?php echo lang('global_password') ?>" name="password"
+                    <input type="password" class="form-control" placeholder="<?php echo lang('global_password') ?>"
+                           name="password"
                            value="<?php echo set_value('password') ?>">
                 </div>
             </div>
@@ -60,10 +70,11 @@
                 <label class="col-sm-2 control-label"></label>
 
                 <div class="col-sm-10">
-                    <input type="submit" class="btn btn-secondary " name="submit" value="<?php echo lang('global_submit') ?>">
+                    <input type="submit" class="btn btn-secondary " name="submit"
+                           value="<?php echo lang('global_submit') ?>">
                 </div>
             </div>
-        </form>
+        </form>-->
     </div>
 </div>
 
