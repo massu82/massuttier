@@ -1,16 +1,16 @@
-
 <!-- Main Content Pages -->
 <div class="content-pages">
     <!-- Subpages -->
     <div class="sub-home-pages">
         <!-- Start Page home -->
         <section id="home" class="sub-page start-page">
-            <div class="sub-page-inner" style="background: url('<?php echo base_url() ?>/cdn/settings/<?php echo config('home_bg') ?>');">
+            <div class="sub-page-inner"
+                 style="background: url('<?php echo base_url() ?>/cdn/settings/<?php echo config('home_bg') ?>');">
                 <div class="mask"></div>
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="title-block">
-                            <h2><?php echo lang('global_hello_i_am') ?> <?php echo config('name') ?></h2>
+                            <h2><?php echo lang('global_hello_i_am') ?><?php echo config('name') ?></h2>
                             <div class="type-wrap">
                                 <div class="cd-headline clip">
                                     <span class="blc"><?php echo lang('global_I_am_working_as') ?></span>
@@ -22,8 +22,10 @@
                                 </div>
                             </div>
                             <div class="home-buttons">
-                                <a href="#contact" class="bt-submit"><i class="lnr lnr-envelope"></i> <?php echo lang('global_contact_me') ?></a>
-                                <a href="#contact" class="bt-submit"><i class="lnr lnr-briefcase"></i> <?php echo lang('global_hire_me') ?></a>
+                                <a href="#contact" class="bt-submit"><i
+                                            class="lnr lnr-envelope"></i> <?php echo lang('global_contact_me') ?></a>
+                                <a href="#contact" class="bt-submit"><i
+                                            class="lnr lnr-briefcase"></i> <?php echo lang('global_hire_me') ?></a>
                             </div>
                         </div>
                     </div>
@@ -48,50 +50,55 @@
                     <div class="row pb-30">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <h3><?php echo config('name') ?></h3>
-                            <span class="about-location"><i class="lnr lnr-map-marker"></i><?php echo config('nationality') ?></span>
+                            <span class="about-location"><i
+                                        class="lnr lnr-map-marker"></i><?php echo config('nationality') ?></span>
                             <?php foreach (explode("\n", config('about_me')) as $i): ?>
                                 <p class="about-content"><?php echo $i ?></p>
                             <?php endforeach; ?>
                             <ul class="bout-list-summry row">
                                 <?php if (config('num_experience')): ?>
-                                <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="icon-info">
-                                        <i class="lnr lnr-briefcase"></i> 
-                                    </div>
-                                    <div class="details-info">
-                                        <h6><?php echo config('num_experience') ?>+ <?php echo lang('global_Years_Job') ?></h6>
-                                        <p><?php echo lang('global_Experience') ?></p>
-                                    </div>
-                                </li>
+                                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                        <div class="icon-info">
+                                            <i class="lnr lnr-briefcase"></i>
+                                        </div>
+                                        <div class="details-info">
+                                            <h6><?php echo config('num_experience') ?>
+                                                + <?php echo lang('global_Years_Job') ?></h6>
+                                            <p><?php echo lang('global_Experience') ?></p>
+                                        </div>
+                                    </li>
                                 <?php endif ?>
                                 <?php if (config('num_projects')): ?>
-                                <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="icon-info">
-                                        <i class="lnr lnr-layers"></i> 
-                                    </div>
-                                    <div class="details-info">
-                                        <h6><?php echo config('num_projects') ?>+ <?php echo lang('global_Projects') ?></h6>
-                                        <p><?php echo lang('global_Completed') ?></p>
-                                    </div>
-                                </li>
-                                 <?php endif ?>
+                                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                        <div class="icon-info">
+                                            <i class="lnr lnr-layers"></i>
+                                        </div>
+                                        <div class="details-info">
+                                            <h6><?php echo config('num_projects') ?>
+                                                + <?php echo lang('global_Projects') ?></h6>
+                                            <p><?php echo lang('global_Completed') ?></p>
+                                        </div>
+                                    </li>
+                                <?php endif ?>
                                 <?php if (config('num_meetings')): ?>
-                                <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="icon-info">
-                                        <i class="lnr lnr-coffee-cup"></i> 
-                                    </div>
-                                    <div class="details-info">
-                                        <h6><?php echo config('num_meetings') ?>+ <?php echo lang('global_Meetings') ?></h6>
-                                        <p><?php echo lang('global_Successful') ?></p>
-                                    </div>
-                                </li>
-                                 <?php endif ?>
+                                    <li class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                        <div class="icon-info">
+                                            <i class="lnr lnr-coffee-cup"></i>
+                                        </div>
+                                        <div class="details-info">
+                                            <h6><?php echo config('num_meetings') ?>
+                                                + <?php echo lang('global_Meetings') ?></h6>
+                                            <p><?php echo lang('global_Successful') ?></p>
+                                        </div>
+                                    </li>
+                                <?php endif ?>
                             </ul>
                         </div>
 
                         <div class="col-xs-6 col-sm-12 col-md-6 col-lg-6">
                             <div class="box-img">
-                                <img src="<?php echo base_url() ?>/cdn/settings/<?php echo config('about_bg') ?>" class="img-fluid" alt="image">
+                                <img src="<?php echo base_url() ?>/cdn/settings/<?php echo config('about_bg') ?>"
+                                     class="img-fluid" alt="image">
                             </div>
                         </div>
                     </div>
@@ -107,10 +114,10 @@
                                 </h4>
                             </div>
                             <div class="row">
-                                <?php foreach (array_chunk($services, 2) as $ma): ?>  
+                                <?php foreach (array_chunk($services, 2) as $ma): ?>
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                         <div class="services-list">
-                                            <?php foreach ($ma as $item): ?>  
+                                            <?php foreach ($ma as $item): ?>
                                                 <div class="service-block">
                                                     <div class="service-icon">
                                                         <i><img src="<?php echo base_url() ?>/cdn/services/<?php echo $item->image ?>"/></i>
@@ -119,7 +126,7 @@
                                                         <h4><?php echo $item->title ?></h4>
                                                         <p>
                                                             <?php $this->load->helper('text') ?>
-                                                            <?php echo word_limiter($item->description, 30) ?> 
+                                                            <?php echo word_limiter($item->description, 30) ?>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -148,7 +155,7 @@
                                             <div class="pulse-icon">
                                                 <div class="icon-wrap">
                                                     <a href="<?php echo config('video_link') ?>">
-                                                        <i class="fa fa-play"></i> 
+                                                        <i class="fa fa-play"></i>
                                                     </a>
                                                 </div>
                                                 <div class="elements">
@@ -168,69 +175,73 @@
                     <?php endif ?>
                     <!-- Fun Facts -->
                     <?php if (config('display_fun_facts') == "1"): ?>
-                    <div class="row pb-30 pt-30">
-                        <div class="section-head col-sm-12">
-                            <h4>
-                                <span><?php echo lang('global_Fun') ?></span>
-                                <?php echo lang('global_Facts') ?>
-                            </h4>
-                        </div>
-                        <!-- Item 1 -->
-                        <?php if(config("num_happy_clients")): ?>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="pb-30">
-                                <div class="counter-block">
-                                    <i class="pe-7s-smile"></i>
-                                    <h4><?php echo lang('global_Happy_Clients') ?></h4>
-                                    <span class="counter-block-value" data-count="<?php echo config('num_happy_clients') ?>">0</span>
-                                </div>
+                        <div class="row pb-30 pt-30">
+                            <div class="section-head col-sm-12">
+                                <h4>
+                                    <span><?php echo lang('global_Fun') ?></span>
+                                    <?php echo lang('global_Facts') ?>
+                                </h4>
                             </div>
-                        </div>
-                         <?php endif ?>
-                        <!-- /Item 1-->
+                            <!-- Item 1 -->
+                            <?php if (config("num_happy_clients")): ?>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="pb-30">
+                                        <div class="counter-block">
+                                            <i class="pe-7s-smile"></i>
+                                            <h4><?php echo lang('global_Happy_Clients') ?></h4>
+                                            <span class="counter-block-value"
+                                                  data-count="<?php echo config('num_happy_clients') ?>">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endif ?>
+                            <!-- /Item 1-->
 
-                        <!-- Item 2 -->
-                        <?php if(config("num_experience")): ?>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="pb-30">
-                                <div class="counter-block">
-                                    <i class="pe-7s-light"></i>
-                                    <h4><?php echo lang('global_Experience') ?> <?php echo lang('global_Years') ?></h4>
-                                    <span class="counter-block-value" data-count="<?php echo config('num_experience') ?>">0</span>
+                            <!-- Item 2 -->
+                            <?php if (config("num_experience")): ?>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="pb-30">
+                                        <div class="counter-block">
+                                            <i class="pe-7s-light"></i>
+                                            <h4><?php echo lang('global_Experience') ?><?php echo lang('global_Years') ?></h4>
+                                            <span class="counter-block-value"
+                                                  data-count="<?php echo config('num_experience') ?>">0</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                         <?php endif ?>
-                        <!-- /Item 2 -->
+                            <?php endif ?>
+                            <!-- /Item 2 -->
 
-                        <!-- Item 3-->
-                        <?php if(config("num_awards")): ?>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="pb-30">
-                                <div class="counter-block">
-                                    <i class="pe-7s-cup"></i>
-                                    <h4><?php echo lang('global_Awards_Won') ?></h4>
-                                    <span class="counter-block-value" data-count="<?php echo config('num_awards') ?>">0</span>
+                            <!-- Item 3-->
+                            <?php if (config("num_awards")): ?>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="pb-30">
+                                        <div class="counter-block">
+                                            <i class="pe-7s-cup"></i>
+                                            <h4><?php echo lang('global_Awards_Won') ?></h4>
+                                            <span class="counter-block-value"
+                                                  data-count="<?php echo config('num_awards') ?>">0</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                         <?php endif ?>
-                        <!-- /Item 3 -->
+                            <?php endif ?>
+                            <!-- /Item 3 -->
 
-                        <!-- Item 4-->
-                        <?php if(config("num_meetings")): ?>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="pb-30">
-                                <div class="counter-block">
-                                    <i class="pe-7s-coffee"></i>
-                                    <h4><?php echo lang('global_Meetings') ?></h4>
-                                    <span class="counter-block-value" data-count="<?php echo config('num_meetings') ?>">0</span>
+                            <!-- Item 4-->
+                            <?php if (config("num_meetings")): ?>
+                                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="pb-30">
+                                        <div class="counter-block">
+                                            <i class="pe-7s-coffee"></i>
+                                            <h4><?php echo lang('global_Meetings') ?></h4>
+                                            <span class="counter-block-value"
+                                                  data-count="<?php echo config('num_meetings') ?>">0</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php endif ?>
+                            <!-- /Item 4-->
                         </div>
-                        <?php endif ?>
-                        <!-- /Item 4-->
-                    </div>
                     <?php endif ?>
                     <!-- /Fun Facts -->
 
@@ -244,30 +255,56 @@
                                 </h4>
                             </div>
                             <div class="testimonials owl-carousel">
-                                <?php foreach ($testimonials as $testimonial): ?>  
+                                <?php foreach ($testimonials as $testimonial): ?>
                                     <!-- Testimonial item 1 -->
                                     <div class="testimonial-item">
                                         <div class="testimonial-content">
                                             <div class="testimonial-review">
                                                 <p>
                                                     <?php $this->load->helper('text') ?>
-                                                    <?php echo word_limiter($testimonial->message, 50) ?> 
+                                                    <?php echo word_limiter($testimonial->message, 50) ?>
                                                 </p>
                                             </div>
-                                        </div>            
+                                        </div>
                                         <div class="testimonial-footer">
                                             <div class="testimonial-avatar">
-                                                <img src="<?php echo base_url() ?>/cdn/testimonials/<?php echo $testimonial->image ?>" alt="<?php echo $testimonial->name ?>"/>
-                                            </div>              
+                                                <img src="<?php echo base_url() ?>/cdn/testimonials/<?php echo $testimonial->image ?>"
+                                                     alt="<?php echo $testimonial->name ?>"/>
+                                            </div>
                                             <div class="testimonial-owner-content">
                                                 <p class="testimonial-owner"><?php echo $testimonial->name ?></p>
                                                 <p class="testimonial-position"><?php echo $testimonial->position ?></p>
                                                 <ul class="testimonial-rating rating">
-                                                    <?php if ($testimonial->rating == 5): ?><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>
-                                                    <?php elseif ($testimonial->rating == 4): ?><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star half-star"></i></li>
-                                                    <?php elseif ($testimonial->rating == 3): ?><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star half-star"></i></li><li><i class="fa fa-star half-star"></i></li>
-                                                    <?php elseif ($testimonial->rating == 2): ?><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star half-star"></i></li><li><i class="fa fa-star half-star"></i></li><li><i class="fa fa-star half-star"></i></li>
-                                                    <?php elseif ($testimonial->rating == 1): ?><li><i class="fa fa-star"></i></li><li><i class="fa fa-star half-star"></i></li><li><i class="fa fa-star half-star"></i></li><li><i class="fa fa-star half-star"></i></li><li><i class="fa fa-star half-star"></i></li><?php endif ?>
+                                                    <?php if ($testimonial->rating == 5): ?>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    <?php elseif ($testimonial->rating == 4): ?>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                    <?php elseif ($testimonial->rating == 3): ?>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                    <?php elseif ($testimonial->rating == 2): ?>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                    <?php elseif ($testimonial->rating == 1): ?>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li>
+                                                        <li><i class="fa fa-star half-star"></i></li><?php endif ?>
                                                 </ul>
                                             </div>
                                         </div>
@@ -292,10 +329,11 @@
                                 </div>
                                 <!-- List Of Clients -->
                                 <div class="clients owl-carousel">
-                                    <?php foreach ($clients as $client): ?>  
+                                    <?php foreach ($clients as $client): ?>
                                         <div class="client-block">
                                             <a href="#" target="_blank" title="<?php echo $client->title ?>">
-                                                <img src="<?php echo base_url() ?>/cdn/clients/<?php echo $client->image ?>" alt="<?php echo $client->title ?>">
+                                                <img src="<?php echo base_url() ?>/cdn/clients/<?php echo $client->image ?>"
+                                                     alt="<?php echo $client->title ?>">
                                             </a>
                                         </div>
                                     <?php endforeach ?>
@@ -335,21 +373,27 @@
                                             <span><?php echo lang('global_My_Professional') ?></span>
                                             <?php echo lang('global_Work_History') ?>
                                         </h4>
-                                        <a class="bt-submit" href="<?php echo base_url() ?>/cdn/about/<?php echo config('resume') ?>"><i class="fas fa-cloud-download-alt"></i> <?php echo lang('global_Download_Resume') ?></a>
+                                        <a class="bt-submit"
+                                           href="<?php echo base_url() ?>/cdn/about/<?php echo config('resume') ?>"><i
+                                                    class="fas fa-cloud-download-alt"></i> <?php echo lang('global_Download_Resume') ?>
+                                        </a>
                                     </div>
                                     <div class="main-timeline">
-                                        <?php foreach ($experiences as $exp): ?>  
+                                        <?php foreach ($experiences as $exp): ?>
                                             <div class="timeline <?php if ($exp->current !== NULL): ?>currecnt<?php endif ?>">
                                                 <div class="timeline-icon">
-                                                    <img src="<?php echo base_url() ?>/cdn/resume/<?php echo $exp->image ?>" alt="<?php echo $exp->company ?>">
+                                                    <img src="<?php echo base_url() ?>/cdn/resume/<?php echo $exp->image ?>"
+                                                         alt="<?php echo $exp->company ?>">
                                                 </div>
                                                 <div class="timeline-content">
                                                     <span class="date">
                                                         <?php echo date('M Y', strtotime($exp->from_date)) ?> 
                                                         - 
-                                                        <?php if ($exp->current !== NULL): ?> <?php echo lang('global_Current') ?> <?php else: ?> <?php echo date('M Y', strtotime($exp->to_date)) ?> <?php endif ?></span>
+                                                        <?php if ($exp->current !== NULL): ?><?php echo lang('global_Current') ?><?php else: ?><?php echo date('M Y', strtotime($exp->to_date)) ?><?php endif ?></span>
 
-                                                    <h5 class="title"><?php echo $exp->position ?> -  <span class="place-title"><?php echo $exp->company ?></span></h5>
+                                                    <h5 class="title"><?php echo $exp->position ?> - <span
+                                                                class="place-title"><?php echo $exp->company ?></span>
+                                                    </h5>
                                                     <p class="description">
                                                         <?php echo $exp->description ?>
                                                     </p>
@@ -357,13 +401,13 @@
                                             </div>
                                         <?php endforeach ?>
                                     </div>
-                                </div>   
+                                </div>
                                 <!-- /Work History -->
 
                                 <!-- Skills -->
                                 <div class="pb-30 pt-30">
                                     <div class="row list-skills">
-                                        <?php foreach ($skills_cats as $skl_cat): ?> 
+                                        <?php foreach ($skills_cats as $skl_cat): ?>
                                             <!-- Work Skills -->
                                             <div class="col-md-6">
                                                 <div class="special-block-bg">
@@ -378,7 +422,11 @@
                                                             <div class="skill-item">
                                                                 <h4><?php echo $skl->title ?></h4>
                                                                 <div class="progress">
-                                                                    <div class="progress-bar wow fadeInLeft" data-progress="<?php echo $skl->rate ?>%" style="width: <?php echo $skl->rate ?>%;" data-wow-duration="1.5s" data-wow-delay="1.2s"> </div>
+                                                                    <div class="progress-bar wow fadeInLeft"
+                                                                         data-progress="<?php echo $skl->rate ?>%"
+                                                                         style="width: <?php echo $skl->rate ?>%;"
+                                                                         data-wow-duration="1.5s"
+                                                                         data-wow-delay="1.2s"></div>
                                                                 </div>
                                                                 <span><?php echo $skl->rate ?>%</span>
                                                             </div>
@@ -393,7 +441,7 @@
                                 <!-- /Skills -->
 
                                 <!-- Education History -->
-                                <div class="pt-30">   
+                                <div class="pt-30">
                                     <div class="section-head">
                                         <h4>
                                             <span><?php echo lang('global_My_Education') ?></span>
@@ -401,17 +449,20 @@
                                         </h4>
                                     </div>
                                     <div class="main-timeline">
-                                        <?php foreach ($education as $edu): ?>  
+                                        <?php foreach ($education as $edu): ?>
                                             <div class="timeline <?php if ($edu->current !== NULL): ?>currecnt<?php endif ?>">
                                                 <div class="timeline-icon">
-                                                    <img src="<?php echo base_url() ?>/cdn/resume/<?php echo $edu->image ?>" alt="<?php echo $edu->school ?>">
+                                                    <img src="<?php echo base_url() ?>/cdn/resume/<?php echo $edu->image ?>"
+                                                         alt="<?php echo $edu->school ?>">
                                                 </div>
                                                 <div class="timeline-content">
                                                     <span class="date">
                                                         <?php echo date('M Y', strtotime($edu->from_date)) ?> 
                                                         - 
-                                                        <?php if ($edu->current !== NULL): ?>  <?php echo lang('global_Current') ?> <?php else: ?> <?php echo date('M Y', strtotime($edu->to_date)) ?> <?php endif ?></span>
-                                                    <h5 class="title"> <?php echo $edu->field ?> - <span class="place-title"><?php echo $edu->school ?></span></h5>
+                                                        <?php if ($edu->current !== NULL): ?><?php echo lang('global_Current') ?><?php else: ?><?php echo date('M Y', strtotime($edu->to_date)) ?><?php endif ?></span>
+                                                    <h5 class="title"> <?php echo $edu->field ?> - <span
+                                                                class="place-title"><?php echo $edu->school ?></span>
+                                                    </h5>
                                                     <p class="description">
                                                         <?php echo $edu->description ?>
                                                     </p>
@@ -445,26 +496,36 @@
 
                     <div class="section-content">
                         <div class="filter-tabs">
-                            <button class="fil-cat" data-rel="all"><span>0</span> <?php echo lang('global_All') ?></button>
-                            <?php foreach ($projects_categories as $pro_cat): ?> 
-                                <button class="fil-cat" data-rel="pro_cat_<?php echo $pro_cat->project_category_id ?>"><span>(<?php echo $pro_cat->count ?>)</span> <?php echo $pro_cat->title ?></button>
+                            <button class="fil-cat" data-rel="all"><span>0</span> <?php echo lang('global_All') ?>
+                            </button>
+                            <?php foreach ($projects_categories as $pro_cat): ?>
+                                <button class="fil-cat" data-rel="pro_cat_<?php echo $pro_cat->project_category_id ?>">
+                                    <span>(<?php echo $pro_cat->count ?>)</span> <?php echo $pro_cat->title ?></button>
                             <?php endforeach ?>
                         </div>
 
                         <div class="portfolio-grid portfolio-trigger" id="portfolio-page">
-                            <div class="label-portfolio"><span class="rotated-sub"><?php echo lang('global_Project') ?></span><span class="project-count"><?php echo $projects_count ?></span></div>
+                            <div class="label-portfolio"><span
+                                        class="rotated-sub"><?php echo lang('global_Project') ?></span><span
+                                        class="project-count"><?php echo $projects_count ?></span></div>
                             <div class="row">
-                                <?php foreach ($projects as $pro): ?> 
+                                <?php foreach ($projects as $pro): ?>
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item pro_cat_<?php echo $pro->project_category_id ?> all">
                                         <div class="portfolio-img">
-                                            <img src="<?php echo base_url() ?>/cdn/projects/<?php echo $pro->image ?>" class="img-responsive" alt="<?php echo $pro->title ?>">
+                                            <img src="<?php echo base_url() ?>/cdn/projects/<?php echo $pro->image ?>"
+                                                 class="img-responsive" alt="<?php echo $pro->title ?>">
                                         </div>
                                         <div class="portfolio-data">
-                                            <h4><a href="<?php echo site_url('project/' . $pro->project_id . '-' . sanitize($pro->title)) ?>"><?php echo $pro->title ?></a></h4>
+                                            <h4>
+                                                <a href="<?php echo site_url('project/' . $pro->project_id . '-' . sanitize($pro->title)) ?>"><?php echo $pro->title ?></a>
+                                            </h4>
                                             <p class="meta"><?php echo $pro->category_project ?></p>
-                                            <div class="portfolio-attr"> 
-                                                <a href="<?php echo site_url('project/' . $pro->project_id . '-' . sanitize($pro->title)) ?>"><i class="lnr lnr-link"></i></a> 
-                                                <a href="<?php echo base_url() ?>/cdn/projects/<?php echo $pro->image ?>" data-rel="lightcase:gal" title="<?php echo $pro->title ?>"><i class="lnr lnr-move"></i></a> 
+                                            <div class="portfolio-attr">
+                                                <a href="<?php echo site_url('project/' . $pro->project_id . '-' . sanitize($pro->title)) ?>"><i
+                                                            class="lnr lnr-link"></i></a>
+                                                <a href="<?php echo base_url() ?>/cdn/projects/<?php echo $pro->image ?>"
+                                                   data-rel="lightcase:gal" title="<?php echo $pro->title ?>"><i
+                                                            class="lnr lnr-move"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -492,32 +553,43 @@
 
                     <div class="section-content">
                         <div class="row blog-grid-flex">
-                            <?php foreach ($posts as $post): ?> 
+                            <?php foreach ($posts as $post): ?>
                                 <div class="col-md-4 col-sm-6 blog-item">
                                     <div class="blog-article">
-                                        <div class="comment-like"> <span><i class="fas fa-eye" aria-hidden="true"></i> <?php echo $post->visits ?></span></div>
-                                        <div class="article-img">
-                                            <a href="<?php echo site_url('post/' . $post->blog_id . '-' . sanitize($post->title)) ?>"> <img src="<?php echo base_url() ?>/cdn/blog/<?php echo $post->image ?>" class="img-responsive" alt="<?php echo $post->title ?>"></a>
+                                        <div class="comment-like"><span><i class="fas fa-eye"
+                                                                           aria-hidden="true"></i> <?php echo $post->visits ?></span>
                                         </div>
-                                        <div class="article-link"> <a href="<?php echo site_url('post/' . $post->blog_id . '-' . sanitize($post->title)) ?>"><i class="lnr lnr-arrow-right"></i></a> </div>
+                                        <div class="article-img">
+                                            <a href="<?php echo site_url('post/' . $post->blog_id . '-' . sanitize($post->title)) ?>">
+                                                <img src="<?php echo base_url() ?>/cdn/blog/<?php echo $post->image ?>"
+                                                     class="img-responsive" alt="<?php echo $post->title ?>"></a>
+                                        </div>
+                                        <div class="article-link"><a
+                                                    href="<?php echo site_url('post/' . $post->blog_id . '-' . sanitize($post->title)) ?>"><i
+                                                        class="lnr lnr-arrow-right"></i></a></div>
                                         <div class="article-content">
                                             <h4>
                                                 <a href="<?php echo site_url('post/' . $post->blog_id . '-' . sanitize($post->title)) ?>">
                                                     <?php $this->load->helper('text') ?>
-                                                    <?php echo character_limiter($post->title, 30) ?> 
+                                                    <?php echo character_limiter($post->title, 30) ?>
                                                 </a>
                                             </h4>
-                                            <div class="meta"> <span><i><?php echo date('M', strtotime($post->datetime)) ?></i> <?php echo date('d, Y', strtotime($post->datetime)) ?></span> <span><i>In</i> <a href="<?php echo site_url('blog/category/' . $post->blog_category_id . '-' . sanitize($post->post_category)) ?>"><?php echo $post->post_category ?></a></span> </div>
+                                            <div class="meta">
+                                                <span><i><?php echo date('M', strtotime($post->datetime)) ?></i> <?php echo date('d, Y', strtotime($post->datetime)) ?></span>
+                                                <span><i>In</i> <a
+                                                            href="<?php echo site_url('blog/category/' . $post->blog_category_id . '-' . sanitize($post->post_category)) ?>"><?php echo $post->post_category ?></a></span>
+                                            </div>
                                             <p>
                                                 <?php $this->load->helper('text') ?>
-                                                <?php echo character_limiter($post->short_description, 100) ?> 
+                                                <?php echo character_limiter($post->short_description, 100) ?>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             <?php endforeach ?>
                             <div class="col-md-12 text-center">
-                                <a href="<?php echo site_url('blog') ?>" class="btn bt-submit"><?php echo lang('global_Browse_all_articles') ?></a>
+                                <a href="<?php echo site_url('blog') ?>"
+                                   class="btn bt-submit"><?php echo lang('global_Browse_all_articles') ?></a>
                             </div>
                         </div>
                     </div>
@@ -541,7 +613,8 @@
                 <?php if (config('display_contact_form') == '1'): ?>
                     <div class="row contact-form pb-30">
                         <div class="col-sm-12 col-md-5 col-lg-5 left-background">
-                            <img src="<?php echo base_url() ?>/cdn/settings/<?php echo config('contact_bg') ?>" alt="<?php echo lang('global_Contact') ?>"/>
+                            <img src="<?php echo base_url() ?>/cdn/settings/<?php echo config('contact_bg') ?>"
+                                 alt="<?php echo lang('global_Contact') ?>"/>
                         </div>
                         <div class="col-sm-12 col-md-7 col-lg-7">
                             <div class="form-contact-me">
@@ -549,7 +622,7 @@
                                     <?php if ($success) : ?>
                                         <div class="col-md-12">
                                             <div class="alert alert-success">
-                                                <i class="fa fa-check-circle" aria-hidden="true"></i>  
+                                                <i class="fa fa-check-circle" aria-hidden="true"></i>
                                                 <?php echo lang('global_Thank_you_very_much_We_will_notify_you_when_we_lunch') ?>
                                             </div>
                                         </div>
@@ -557,19 +630,17 @@
                                     <?php if (validation_errors()) : ?>
                                         <div class="col-md-12">
                                             <div class="alert alert-danger">
-                                                <i class="fa fa-times-circle" aria-hidden="true"></i> 
+                                                <i class="fa fa-times-circle" aria-hidden="true"></i>
                                                 <?php echo validation_errors() ?>
                                             </div>
                                         </div>
                                     <?php endif ?>
                                 </div>
-                                <form method="post" id="contact-form" action="<?php echo site_url() ?>#contact">
-                                    <input name="name" type="text" placeholder="<?php echo lang('global_Name') ?>:" required autocomplete="off">
-                                    <input name="email" type="email" placeholder="<?php echo lang('global_email') ?>:" required autocomplete="off">
-                                    <textarea name="message" placeholder="<?php echo lang('global_Message') ?>:" required rows="6"></textarea>
-                                    <div class="g-recaptcha" data-sitekey="<?php echo config('google_site_key') ?>"></div>
-                                    <input class="bt-submit" type="submit" value="<?php echo lang('global_Send_Message') ?>">
-                                </form>
+                                <iframe width="100%" height="650"
+                                        src="https://crm.m-studio.com.mx/forms/wtl/5410f9ee8a0292f91c11e5c4c14633fa"
+                                        frameborder="0"
+                                        sandbox="allow-top-navigation allow-scripts allow-forms allow-same-origin"
+                                        allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -628,7 +699,7 @@
                                 </div>
                                 <div class="contact-text w-75">
                                     <h2><?php echo lang('global_address') ?></h2>
-                                    <p> 
+                                    <p>
                                         <?php foreach (explode("\n", config('address')) as $i): ?>
                                             <?php echo $i ?><br>
                                         <?php endforeach; ?>
@@ -645,38 +716,76 @@
                             <div id="google-map"></div>
                         </div>
                     <?php endif ?>
-                    <!-- /Map Container -->  
+                    <!-- /Map Container -->
 
                     <!-- Social Media -->
                     <div class="pt-50">
                         <div class="social-media-block">
                             <h4>Follow Me: </h4>
                             <ul class="social-media-links">
-                                <?php if (config('facebook')): ?><li><a href="<?php echo config('facebook') ?>"><i class="fab fa-facebook-f"></i></a></li><?php endif ?>
-                                <?php if (config('twitter')): ?><li><a href="<?php echo config('twitter') ?>"><i class="fab fa-twitter"></i></a></li><?php endif ?>
-                                <?php if (config('linkedin')): ?><li><a href="<?php echo config('linkedin') ?>"><i class="fab fa-linkedin-in"></i></a></li><?php endif ?>
-                                <?php if (config('behance')): ?><li><a href="<?php echo config('behance') ?>"><i class="fab fa-behance"></i></a></li><?php endif ?>
-                                <?php if (config('youtube')): ?><li><a href="<?php echo config('youtube') ?>"><i class="fab fa-youtube"></i></a></li><?php endif ?>
-                                <?php if (config('snapchat')): ?><li><a href="<?php echo config('snapchat') ?>"><i class="fab fa-snapchat-ghost"></i></a></li><?php endif ?>
-                                <?php if (config('vimeo')): ?><li><a href="<?php echo config('vimeo') ?>"><i class="fab fa-vimeo-v"></i></a></li><?php endif ?>
-                                <?php if (config('pinterest')): ?><li><a href="<?php echo config('pinterest') ?>"><i class="fab fa-pinterest-p"></i></a></li><?php endif ?>
-                                <?php if (config('codepen')): ?><li><a href="<?php echo config('codepen') ?>"><i class="fab fa-codepen"></i></a></li><?php endif ?>
-                                <?php if (config('dribbble')): ?><li><a href="<?php echo config('dribbble') ?>"><i class="fab fa-dribbble"></i></a></li><?php endif ?>
-                                <?php if (config('dropbox')): ?><li><a href="<?php echo config('dropbox') ?>"><i class="fab fa-dropbox"></i></a></li><?php endif ?>
-                                <?php if (config('flickr')): ?><li><a href="<?php echo config('flickr') ?>"><i class="fab fa-flickr"></i></a></li><?php endif ?>
-                                <?php if (config('reddit')): ?><li><a href="<?php echo config('reddit') ?>"><i class="fab fa-reddit"></i></a></li><?php endif ?>
-                                <?php if (config('rss')): ?><li><a href="<?php echo config('rss') ?>"><i class="fas fa-rss"></i></a></li><?php endif ?>
-                                <?php if (config('skype')): ?><li><a href="<?php echo config('skype') ?>"><i class="fab fa-skype"></i></a></li><?php endif ?>
-                                <?php if (config('soundcloud')): ?><li><a href="<?php echo config('soundcloud') ?>"><i class="fab fa-soundcloud"></i></a></li><?php endif ?>
-                                <?php if (config('stackoverfolw')): ?><li><a href="<?php echo config('stackoverfolw') ?>"><i class="fab fa-stack-overflow"></i></a></li><?php endif ?>
-                                <?php if (config('tumblr')): ?><li><a href="<?php echo config('tumblr') ?>"><i class="fab fa-tumblr"></i></a></li><?php endif ?>
-                                <?php if (config('yelp')): ?><li><a href="<?php echo config('yelp') ?>"><i class="fab fa-yelp"></i></a></li><?php endif ?>
+                                <?php if (config('facebook')): ?>
+                                    <li><a href="<?php echo config('facebook') ?>"><i class="fab fa-facebook-f"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('twitter')): ?>
+                                    <li><a href="<?php echo config('twitter') ?>"><i class="fab fa-twitter"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('linkedin')): ?>
+                                    <li><a href="<?php echo config('linkedin') ?>"><i
+                                                class="fab fa-linkedin-in"></i></a></li><?php endif ?>
+                                <?php if (config('behance')): ?>
+                                    <li><a href="<?php echo config('behance') ?>"><i class="fab fa-behance"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('youtube')): ?>
+                                    <li><a href="<?php echo config('youtube') ?>"><i class="fab fa-youtube"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('snapchat')): ?>
+                                    <li><a href="<?php echo config('snapchat') ?>"><i class="fab fa-snapchat-ghost"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('vimeo')): ?>
+                                    <li><a href="<?php echo config('vimeo') ?>"><i class="fab fa-vimeo-v"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('pinterest')): ?>
+                                    <li><a href="<?php echo config('pinterest') ?>"><i
+                                                class="fab fa-pinterest-p"></i></a></li><?php endif ?>
+                                <?php if (config('codepen')): ?>
+                                    <li><a href="<?php echo config('codepen') ?>"><i class="fab fa-codepen"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('dribbble')): ?>
+                                    <li><a href="<?php echo config('dribbble') ?>"><i class="fab fa-dribbble"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('dropbox')): ?>
+                                    <li><a href="<?php echo config('dropbox') ?>"><i class="fab fa-dropbox"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('flickr')): ?>
+                                    <li><a href="<?php echo config('flickr') ?>"><i class="fab fa-flickr"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('reddit')): ?>
+                                    <li><a href="<?php echo config('reddit') ?>"><i class="fab fa-reddit"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('rss')): ?>
+                                    <li><a href="<?php echo config('rss') ?>"><i class="fas fa-rss"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('skype')): ?>
+                                    <li><a href="<?php echo config('skype') ?>"><i class="fab fa-skype"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('soundcloud')): ?>
+                                    <li><a href="<?php echo config('soundcloud') ?>"><i
+                                                class="fab fa-soundcloud"></i></a></li><?php endif ?>
+                                <?php if (config('stackoverfolw')): ?>
+                                    <li><a href="<?php echo config('stackoverfolw') ?>"><i
+                                                class="fab fa-stack-overflow"></i></a></li><?php endif ?>
+                                <?php if (config('tumblr')): ?>
+                                    <li><a href="<?php echo config('tumblr') ?>"><i class="fab fa-tumblr"></i></a>
+                                    </li><?php endif ?>
+                                <?php if (config('yelp')): ?>
+                                    <li><a href="<?php echo config('yelp') ?>"><i class="fab fa-yelp"></i></a>
+                                    </li><?php endif ?>
                             </ul>
                         </div>
                     </div>
                     <!-- /Social Media -->
                 </div>
-                <!-- /Contact Details -->  
+                <!-- /Contact Details -->
             </div>
         </section>
         <!-- End Contact Subpage -->

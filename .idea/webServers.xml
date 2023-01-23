@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="04e2abe3-c46e-4d71-ae0f-ac83b0ff2ed9" name="wwmass">
+        <fileTransfer rootFolder="/home/wwmass" accessType="SFTP" host="162.214.187.173" port="22022" sshConfigId="3fb625b0-db3e-40f0-8f9a-a001d2cd61a0" sshConfig="wwmass@162.214.187.173:22022 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

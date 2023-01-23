@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="162.214.187.173" id="3fb625b0-db3e-40f0-8f9a-a001d2cd61a0" keyPath="E:\Dropbox\ssh\wwmass\wwmass" port="22022" nameFormat="DESCRIPTIVE" username="wwmass" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
