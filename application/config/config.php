@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'https://massuttier.com.mx/';
+$config['base_url']	= 'https://massuttier.mx/';
 
 /*
 |--------------------------------------------------------------------------
